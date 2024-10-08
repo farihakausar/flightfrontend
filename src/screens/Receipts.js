@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 import LeftSection from "../components/LeftSection";
+import "../css/Receipts.css"; // Assuming you'll add custom CSS here
 
 const { TabPane } = Tabs;
 
@@ -17,15 +18,16 @@ export default function Receipts() {
           {/* Ant Design Tabs for Adverts and Subscriptions */}
           <Tabs
             defaultActiveKey="1"
-            className="flex md:flex-row flex-col"
-            tabBarStyle={{ textAlign: "center" }}
+            tabBarStyle={{
+              textAlign: "center",
+            }}
+            className="custom-tabs"
           >
             {/* Tab 1: Adverts */}
             <TabPane tab="Adverts" key="1">
               <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12">
                 <div className="bg-gray-200 text-gray-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <i className="fas fa-info"></i>{" "}
-                  {/* Assuming you're using Font Awesome */}
                 </div>
                 <p className="text-lg text-gray-500 mb-6">
                   You have no payment methods.
@@ -41,7 +43,6 @@ export default function Receipts() {
               <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12">
                 <div className="bg-gray-200 text-gray-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <i className="fas fa-info"></i>{" "}
-                  {/* Assuming you're using Font Awesome */}
                 </div>
                 <p className="text-lg text-gray-500 mb-6">
                   You have no active subscriptions.
