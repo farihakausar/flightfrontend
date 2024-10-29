@@ -1,7 +1,11 @@
 import React from "react";
-
+import HeaderSecond from "../components/HeaderSecond"
+import Footer from "../components/Footer";
+import logo from "../assests/logo.png";
 export default function AboutUs() {
   return (
+    <>
+    <HeaderSecond/>
     <div className="container mx-auto px-4 py-8 font-poppins">
       <h1 className="text-black text-4xl font-bold text-left border-b border-gray-300 pb-2 mb-4">
         About Friday-Ad
@@ -46,5 +50,9 @@ export default function AboutUs() {
         through the use of search tools and content you interact with.
       </p>
     </div>
+    <Footer/>
+      
+      
+      </>
   );
 }

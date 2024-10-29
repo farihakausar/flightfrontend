@@ -1,7 +1,11 @@
 import React from "react";
-
+import HeaderSecond from "../components/HeaderSecond";
+import Footer from "../components/Footer";
+import logo from "../assests/logo.png";
 const TermsAndConditions = () => {
   return (
+    <>
+    <HeaderSecond/>
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-black text-4xl font-bold text-left border-b border-gray-300 pb-2 mb-4">
         Terms and Conditions
@@ -11,7 +15,7 @@ const TermsAndConditions = () => {
         <p className="text-gray-500 font-bold">Last updated: 21st May 2018</p>
       </div>
       <div className="mb-8">
-        <img src="" alt="Terms and Conditions" className="w-full h-auto" />
+        <img src={logo} alt="Terms and Conditions" className="h-8" />
       </div>
       <div className="space-y-6">
         <p className="text-gray-700 mb-4">
@@ -94,6 +98,8 @@ const TermsAndConditions = () => {
         </h2>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

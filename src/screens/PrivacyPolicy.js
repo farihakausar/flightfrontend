@@ -1,7 +1,10 @@
 import React from "react";
-
+import Footer from "../components/Footer";
+import HeaderSecond from "../components/HeaderSecond";
 const PrivacyPolicy = () => {
   return (
+    <>
+    <HeaderSecond/>
     <div className="bg-white p-6">
       {/* Main Heading */}
       <h1 className="text-black text-4xl font-bold text-left border-b border-gray-300 pb-2 mb-4">
@@ -140,6 +143,8 @@ const PrivacyPolicy = () => {
         anonymous format and not include any Personal Information.
       </p>
     </div>
+    <Footer/>
+    </>
   );
 };
 

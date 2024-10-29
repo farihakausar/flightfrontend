@@ -1,7 +1,11 @@
 import React from "react";
+import HeaderSecond from "../components/HeaderSecond";
+import Footer from "../components/Footer";
 
 export default function ContactUs() {
   return (
+    <>
+    <HeaderSecond/>
     <section className="text-gray-600 body-font relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -96,8 +100,8 @@ export default function ContactUs() {
               </label>
             </div>
             <div className="p-2 w-full flex justify-center">
-              <button className="w-full text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center">
-                Submit
+              <button className="w-full text-white bg-green-500 border-0 py-2 px-8 focus:outline-none  rounded text-lg text-center">
+                Send
               </button>
             </div>
 
@@ -114,5 +118,7 @@ export default function ContactUs() {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }

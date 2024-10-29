@@ -1,0 +1,17 @@
+My request 
+
+
+I need a website and a mobile app IOS and android similar to: https://www.friday-ad.co.uk/
+Additionally, l would like to add Hotel and flight booking from https://www.travelpayouts.com/ no need extra work
+and Adult section have to work like that, where only Registered user can see the contact details
+And server details provided from me it have to deployed in there
+
+
+travelsupermarket.com
+
+travelpayouts.com
+
+
+Username: k.kavi25@gmail.com
+
+Password : Ka123123#

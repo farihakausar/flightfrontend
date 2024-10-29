@@ -24,6 +24,7 @@ import Messeges from "./screens/Messeges";
 import Logout from "./screens/Logout";
 import Login from "./screens/Login";
 import Regsiter from "./screens/Regsiter";
+import Help from "./screens/Help";
 
 function App() {
   return (
@@ -32,16 +33,21 @@ function App() {
         {/* Define Routes */}
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/sale" element={<Sale />} />
+
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+
+        
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
           />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/testimonials" element={<Testimonials />} />
+        
           <Route path="/blogAll" element={<Blog />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/sale" element={<Sale />} />
           <Route path="/blogcat" element={<BlogCategory />} />
           <Route path="/singleBlog/:id" element={<GetSingleBlog />} />
           <Route path="/account" element={<MyAccount />} />
