@@ -25,6 +25,7 @@ import Logout from "./screens/Logout";
 import Login from "./screens/Login";
 import Regsiter from "./screens/Regsiter";
 import Help from "./screens/Help";
+import MediaPack from "./screens/MediaPack";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           />
         
           <Route path="/blogAll" element={<Blog />} />
+          <Route path="/mediaPack" element={<MediaPack/>}/>
           <Route path="/help" element={<Help />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/blogcat" element={<BlogCategory />} />

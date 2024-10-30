@@ -142,7 +142,7 @@ export default function Footer() {
     <nav class="list-none mb-10">
       <li><a href="/about-us"  class="hover:text-white text-gray-600 ">About us </a></li>
       <li><a  href="/testimonials"  class="hover:text-white text-gray-600">Testimonials </a></li>
-      <li><a href="/about"  class="hover:text-white text-gray-600">Media Pack</a></li>
+      <li><a href="/mediaPack"  class="hover:text-white text-gray-600">Media Pack</a></li>
     
     </nav>
    
