@@ -131,8 +131,8 @@ export default function Footer() {
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Can we Help?</h2>
     <nav class="list-none mb-10">
       <li><a  href="/" class="hover:text-white text-gray-600">Home</a></li>
-      <li><a href="/contact-us" class="hover:text-white text-gray-600">Contact us </a></li>
-      <li><a href="/terms-and-conditions" class="hover:text-white text-gray-600">Terms & Conditions</a></li>
+      <li><a href="/dashboard" class="hover:text-white text-gray-600">Account </a></li>
+      <li><a href="/collections" class="hover:text-white text-gray-600">Collections</a></li>
     
     </nav>
    
@@ -163,13 +163,13 @@ export default function Footer() {
        
  
         {/* Social Login Section */}
-        <div className="my-10 text-center">
+        {/* <div className="my-10 text-center">
           <h2 className="text-lg">Social Login</h2>
           <div className="flex justify-center space-x-4 mt-4">
             <button className="bg-blue-600 text-white px-4 py-2 rounded">Login with Google</button>
             <button className="bg-blue-600 text-white px-4 py-2 rounded">Login with Facebook</button>
           </div>
-        </div>
+        </div> */}
 
         {/* Footer Text */}
         <div className="py-4">

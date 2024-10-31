@@ -26,6 +26,8 @@ import Login from "./screens/Login";
 import Regsiter from "./screens/Regsiter";
 import Help from "./screens/Help";
 import MediaPack from "./screens/MediaPack";
+import PlaceAd from "./screens/PlaceAd";
+import Collections from "./screens/Collections";
 
 function App() {
   return (
@@ -45,13 +47,21 @@ function App() {
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
           />
-        
+       <Route
+            path="/placeAd"
+            element={<PlaceAd />}
+          />
+        <Route
+            path="/collections"
+            element={<Collections />}
+          />
+      
           <Route path="/blogAll" element={<Blog />} />
           <Route path="/mediaPack" element={<MediaPack/>}/>
           <Route path="/help" element={<Help />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/blogcat" element={<BlogCategory />} />
-          <Route path="/singleBlog/:id" element={<GetSingleBlog />} />
+          <Route path="/singleBlog" element={<GetSingleBlog />} />
           <Route path="/account" element={<MyAccount />} />
           <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/favads" element={<FavAds />} />

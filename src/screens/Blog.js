@@ -89,7 +89,7 @@ export default function Blog() {
         <p>Marketing Team | May 28, 2024</p>
         <h3>Pompoko Brighton</h3>
         <p>Welcome to the Friday-Ad restaurant review series! If there's a restaurant, pub or café you want us to review, let us know in the comments. Today, we’re featuring one of our absolute favourite places to eat; the Japanese restaurant, Pompoko Brighton....</p>
-        <a href="#" class="text-green-500">read more</a>
+        <a href="/singleBlog" class="text-green-500">read more</a>
       </div>
     </div>
   </div>

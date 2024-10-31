@@ -1,9 +1,11 @@
 import React from "react";
 import LeftSection from "../components/LeftSection";
-
+import Footer from "../components/Footer";
+import HeaderSecond from "../components/HeaderSecond";
 export default function DashBoard() {
   return (
     <>
+   
       <LeftSection />
       <main className="p-4 md:ml-64 h-auto pt-20">
         <div className="rounded-lg h-96 mb-4">
@@ -113,6 +115,7 @@ export default function DashBoard() {
           </div>
         </div>
       </main>
+   
     </>
   );
 }

@@ -27,10 +27,12 @@ export default function Header() {
               <a href="#" class="mr-5  hover:text-gray-900">
                 <FaMusic className="text-2xl" />
               </a>
-              <button class="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white">
-                plaec your add
-                <FiPlus className="w-4 h-4 ml-1" />
-              </button>
+              <a href="/placeAd">
+  <button class="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white">
+    place your ad
+    <FiPlus className="w-4 h-4 ml-1" />
+  </button>
+</a>
             </div>
           </div>
         </div>
