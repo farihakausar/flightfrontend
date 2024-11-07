@@ -28,6 +28,12 @@ import Help from "./screens/Help";
 import MediaPack from "./screens/MediaPack";
 import PlaceAd from "./screens/PlaceAd";
 import Collections from "./screens/Collections";
+import Basic from "./screens/Basic";
+import WriteForus from "./screens/WriteForus";
+import DescrtopnPlaceAd from "./screens/DescrtopnPlaceAd";
+import EnhancePlaceAd from "./screens/EnhancePlaceAd";
+import ContactPlaceAd from "./screens/ContactPlaceAd";
+import PacakagePlaceAd from "./screens/PacakagePlaceAd";
 
 function App() {
   return (
@@ -51,9 +57,29 @@ function App() {
             path="/placeAd"
             element={<PlaceAd />}
           />
+           <Route
+            path="/descriptionPlaceAd"
+            element={<DescrtopnPlaceAd />}
+          />
+           <Route
+            path="/enhnacePlaceAd"
+            element={<EnhancePlaceAd />}
+          />
+           <Route
+            path="/contactPlaceAd"
+            element={<ContactPlaceAd />}
+          />
+          <Route
+            path="/pacakgePlaceAd"
+            element={<PacakagePlaceAd />}
+          />
         <Route
             path="/collections"
             element={<Collections />}
+          />
+       <Route
+            path="/basic"
+            element={<Basic />}
           />
       
           <Route path="/blogAll" element={<Blog />} />
@@ -64,6 +90,7 @@ function App() {
           <Route path="/singleBlog" element={<GetSingleBlog />} />
           <Route path="/account" element={<MyAccount />} />
           <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/write-for-us" element={<WriteForus />} />
           <Route path="/favads" element={<FavAds />} />
           <Route path="/accounts" element={<ManageAccounts />} />
           <Route path="/savedsearches" element={<SavedSearch />} />

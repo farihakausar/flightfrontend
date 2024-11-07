@@ -14,7 +14,7 @@ export default function Blog() {
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">Top stories</a>
-      <a class="mr-5 hover:text-gray-900">write for us k</a>
+      <a href="/write-for-us" class="mr-5 hover:text-gray-900">write for us k</a>
       <a class="mr-5 hover:text-gray-900">categories</a>
       <a class="mr-5 hover:text-gray-900">Go to firday add</a>
     </nav>
