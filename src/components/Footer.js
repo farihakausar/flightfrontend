@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../assests/logo.png";
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-greey-700 text-white">
     
        
       <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -21,14 +21,12 @@ export default function Footer() {
           />
           <label className="flex items-center mb-2">
             <input type="checkbox" className="mr-2" />
-            I agree to the Privacy Policy
+           Alos send me trusted promotions from 3rd party.
           </label>
           <button className="bg-red-600 text-white px-4 py-2 rounded mb-4">
             Subscribe
           </button>
-          <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded">
-            More Details
-          </button>
+         
         </div>
       </div>
        
@@ -64,10 +62,16 @@ export default function Footer() {
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Jobs</h2>
     <nav class="list-none mb-10">
-      <li><a class="hover:text-white text-gray-600">Jobs</a></li>
-      <li><a class="hover:text-white text-gray-600">Childcare Jobs</a></li>
-      <li><a class="hover:text-white text-gray-600">Education Jobs</a></li>
+   
+
+
+      <li><a class="hover:text-white text-gray-600"> Childcare Jobs</a></li>
+      <li><a class="hover:text-white text-gray-600">
+      Education Jobs</a></li>
       <li><a class="hover:text-white text-gray-600">Healthcare & Medicine Jobs</a></li>
+      <li><a class="hover:text-white text-gray-600">Health, Beauty & Fitness Jobs</a></li>
+      <li><a class="hover:text-white text-gray-600">
+      Home & Social Care Jobs</a></li>
     </nav>
    
   </div>
@@ -75,10 +79,13 @@ export default function Footer() {
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Services</h2>
     <nav class="list-none mb-10">
-      <li><a class="hover:text-white text-gray-600">Health, Beauty & Fitness Jobs</a></li>
-      <li><a class="hover:text-white text-gray-600">Home & Social Care Jobs</a></li>
-      <li><a class="hover:text-white text-gray-600">Services</a></li>
-      <li><a class="hover:text-white text-gray-600">Languages</a></li>
+   
+
+
+      <li><a class="hover:text-white text-gray-600"> Languages</a></li>
+      <li><a class="hover:text-white text-gray-600">Garden Services</a></li>
+      <li><a class="hover:text-white text-gray-600">Transport</a></li>
+    
     </nav>
    
   </div>
@@ -86,10 +93,14 @@ export default function Footer() {
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Property </h2>
     <nav class="list-none mb-10">
-      <li><a class="hover:text-white text-gray-600">Garden Services</a></li>
-      <li><a class="hover:text-white text-gray-600">Transport</a></li>
-      <li><a class="hover:text-white text-gray-600">Property</a></li>
-      <li><a class="hover:text-white text-gray-600">Houses & Bungalows</a></li>
+ 
+
+
+
+      <li><a class="hover:text-white text-gray-600">   Houses & Bungalows</a></li>
+      <li><a class="hover:text-white text-gray-600">Flats & Bedsits</a></li>
+      <li><a class="hover:text-white text-gray-600">Rooms</a></li>
+      <li><a class="hover:text-white text-gray-600">Commercial</a></li>
     </nav>
    
   </div>
@@ -97,10 +108,13 @@ export default function Footer() {
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Animals</h2>
     <nav class="list-none mb-10">
-      <li><a class="hover:text-white text-gray-600">Flats & Bedsits</a></li>
-      <li><a class="hover:text-white text-gray-600">Rooms</a></li>
-      <li><a class="hover:text-white text-gray-600">Commercial</a></li>
-      <li><a class="hover:text-white text-gray-600">Animals</a></li>
+
+
+
+      <li><a class="hover:text-white text-gray-600">Cats & Kittens</a></li>
+      <li><a class="hover:text-white text-gray-600">Dogs & Puppies</a></li>
+      <li><a class="hover:text-white text-gray-600">Horses</a></li>
+   
     </nav>
    
   </div>
@@ -108,14 +122,18 @@ export default function Footer() {
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Events</h2>
     <nav class="list-none mb-10">
-      <li><a class="hover:text-white text-gray-600">Cats & Kittens</a></li>
-      <li><a class="hover:text-white text-gray-600">Dogs & Puppies</a></li>
-      <li><a class="hover:text-white text-gray-600">Horses</a></li>
-      <li><a class="hover:text-white text-gray-600">Events</a></li>
+   
+
+      <li><a class="hover:text-white text-gray-600"> Car Boot Sales & Garage Sales</a></li>
+     
     </nav>
    
   </div>
-
+  <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+    <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Adult</h2>
+   
+   
+  </div>
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
     <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Can we Help?</h2>
     <nav class="list-none mb-10">
@@ -126,9 +144,9 @@ export default function Footer() {
     </nav>
    
   </div>
-{/* /////main  */}
+
   <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-    <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Can we Help?</h2>
+
     <nav class="list-none mb-10">
       <li><a  href="/" class="hover:text-white text-gray-600">Home</a></li>
       <li><a href="/dashboard" class="hover:text-white text-gray-600">Account </a></li>
@@ -157,21 +175,28 @@ export default function Footer() {
  </nav>
 
 </div>
+<div class="lg:w-1/4 md:w-1/2 w-full px-4">
+    <h2 class="title-font font-bold text-white tracking-widest text-sm mb-3">Suggested links</h2>
+    <nav class="list-none mb-10">
+      <li><a  href="/" class="hover:text-white text-gray-600">Free to collect</a></li>
+    
+    </nav>
+   
+  </div>
 </div>
 
         </div>
        
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mt-8">
  
-        {/* Social Login Section */}
-        {/* <div className="my-10 text-center">
-          <h2 className="text-lg">Social Login</h2>
-          <div className="flex justify-center space-x-4 mt-4">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded">Login with Google</button>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded">Login with Facebook</button>
-          </div>
-        </div> */}
+ <nav class="list-none mb-10">
+   <li><a href="/blogAll"  class="hover:text-white text-gray-600 ">Collections </a></li>
+ 
+ </nav>
 
-        {/* Footer Text */}
+</div>
+
+        
         <div className="py-4">
   <div className="container mx-auto flex flex-wrap justify-center">
     <img src={logo} alt="Company Logo" className="h-10 mb-2" />

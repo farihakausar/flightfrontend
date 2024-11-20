@@ -14,64 +14,14 @@ import {
 import main1 from "../assests/main1.png";
 import { FiSearch, FiMapPin, FiTag, FiHeart } from "react-icons/fi";
 import main from "../assests/main.png";
+import SearchBar from "./MainSection";
 
 export default function MainPage() {
   return (
     <>
       <Header />
       <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          {/* Left Content */}
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            {/* Location and UK Change */}
-            <div className="flex items-center mb-4 space-x-2">
-              <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900">
-                Find me a local
-              </h1>
-            </div>
-
-            {/* Search Input */}
-            {/* Search Input */}
-            <div className="relative w-full mb-8">
-              <input
-                placeholder="Whate are you loooking fro "
-                type="text"
-                className="w-full py-3 pl-5 pr-14 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <FiSearch
-                className="absolute right-2 top-2 text-white bg-gradient-to-r from-green-400 to-green-600 p-2 rounded-lg"
-                size={36} // Adjust size to match the input height
-              />
-            </div>
-            <div className="flex items-center space-x-1 mb-3">
-              <FiMapPin className="text-gray-500" size={20} />
-              <p className="text-sm text-gray-500">UK change</p>
-            </div>
-
-            {/* Small Buttons for Car Options */}
-            <div className="flex space-x-2 mb-4">
-              {["Cars", "SUVs", "Trucks", "Vans", "Luxury", "Electric"].map(
-                (option) => (
-                  <button
-                    key={option}
-                    className="py-2 px-4 border border-gray-300 rounded text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    {option}
-                  </button>
-                )
-              )}
-            </div>
-          </div>
-
-          {/* Right Content (Image) */}
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={main}
-            />
-          </div>
-        </div>
+       <SearchBar/>
       </section>
       {/* nbjnbj */}
       <div class="bg-white py-6 sm:py-8 lg:py-12">
