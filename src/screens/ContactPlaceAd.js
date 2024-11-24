@@ -1,8 +1,11 @@
 import React from "react";
 import logo from "../assests/logo.png";
+import Footer from "../components/Footer";
+import HeaderSecond from "../components/HeaderSecond";
 const ContactPlaceAd = () => {
   return (
    <>
+   <HeaderSecond/>
    <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
         {/* Step Progress */}
@@ -128,6 +131,8 @@ How can people get in touch?
         </div>
       </footer>
     </div>
+    
+    <Footer />
    
    </>
   );

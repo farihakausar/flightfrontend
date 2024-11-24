@@ -118,10 +118,18 @@ const closeSavedModal = () => {
               <a href="#" className="mr-5 hover:text-gray-900">
                 <FaMusic className="text-2xl" />
               </a>
-              <button className="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white">
-                Place your ad
+              {/* <button href="/placeAd" className="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white">
+                Place adddd
                 <FiPlus className="w-4 h-4 ml-1" />
-              </button>
+              </button> */}
+              <a
+  href="/descriptionPlaceAd"
+  className="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white"
+>
+  Place Your Ad 
+  <FiPlus className="w-4 h-4 ml-1" />
+</a>
+
             </div>
           </div>
         </div>
