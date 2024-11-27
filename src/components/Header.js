@@ -1,16 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../assests/LOGOOO.jpg";
+import { FaHeadphones } from "react-icons/fa";
 import { FaEnvelope, FaMusic } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import SavedModal from "../screens/SavedModal";
 import ServiceModal from "../screens/ServicsModal";
 import CategoriesModal from "../screens/CategoriesModal";
-
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { AiFillMessage } from "react-icons/ai";
+import { MdOutlineMessage } from "react-icons/md";
 export default function Header() {
   const [showCategoriesModal, setShowCategoriesModal] = useState(false);
   const [showServiceModal, setShowServiceModal] = useState(false);
-  const [showSavedModal, setShowSavedModal] = useState(false)
+  const [showSavedModal, setShowSavedModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // state to manage dropdown visibility
 
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   const categoriesTimeout = useRef(null);
   const servicesTimeout = useRef(null);
   const savedTimeout = useRef(null);
@@ -21,7 +28,10 @@ export default function Header() {
   };
 
   const closeCategoriesModal = () => {
-    categoriesTimeout.current = setTimeout(() => setShowCategoriesModal(false), 200);
+    categoriesTimeout.current = setTimeout(
+      () => setShowCategoriesModal(false),
+      200
+    );
   };
 
   const openServiceModal = () => {
@@ -35,9 +45,10 @@ export default function Header() {
   const openSavedModal = () => {
     clearTimeout(savedTimeout.current);
     setShowSavedModal(true);
-    };
-const closeSavedModal = () => {
-  savedTimeout.current = setTimeout(() => setShowSavedModal(false), 200);}
+  };
+  const closeSavedModal = () => {
+    savedTimeout.current = setTimeout(() => setShowSavedModal(false), 200);
+  };
   // Clear timeouts on component unmount
   useEffect(() => {
     return () => {
@@ -51,6 +62,7 @@ const closeSavedModal = () => {
 
   return (
     <>
+      <Header />
       <header className="text-gray-600 body-font sticky top-0 bg-white shadow-md z-50">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex items-center mr-5">
@@ -106,27 +118,66 @@ const closeSavedModal = () => {
                 </div>
               )}
             </div>
-            
-           
           </nav>
 
-          <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+          <div className="lg:w-full inline-flex justify-end  lg:ml-0">
             <div className="flex items-center">
-              <a href="#" className="mr-5 hover:text-gray-900">
-                <FaEnvelope className="text-2xl" />
+              <a href="/registerMain" className="mr-5 hover:text-gray-900">
+                Sign in
               </a>
-              <a href="#" className="mr-5 hover:text-gray-900">
-                <FaMusic className="text-2xl" />
-              </a>
-            
-              <a
-  href="/descriptionPlaceAd"
-  className="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white"
->
-  Place Your Ad 
-  <FiPlus className="w-4 h-4 ml-1" />
-</a>
+              {/* Dropdown menu for Contact/Send Message */}
+              <div className="relative">
+                <a
+                  href="#"
+                  className="mr-5 flex items-center hover:text-gray-900"
+                  onClick={toggleDropdown}
+                >
+                  <FaHeadphones className="text-2xl" />
+                </a>
+                {isOpen && (
+                  <div className="absolute right-0 mt-2 bg-white border rounded-lg shadow-lg w-48">
+                    <ul className="text-sm">
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-center font-bold"
+                        >
+                          Contact
+                        </a>
+                      </li>
 
+                      <li>
+                        <a
+                          href="#"
+                          className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200"
+                        >
+                          <MdOutlineMessage className="mr-2" />{" "}
+                          {/* Adjusts space between icon and text */}
+                          Send Message
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200"
+                        >
+                          <AiFillMessage className="mr-2" />{" "}
+                          {/* Adjusts space between icon and text */}
+                          Live Chat
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+
+              <a
+                href="/descriptionPlaceAd"
+                className="inline-flex items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-600 rounded text-base text-white"
+              >
+                Place Your Ad
+                <FiPlus className="w-4 h-4 ml-1" />
+              </a>
             </div>
           </div>
         </div>

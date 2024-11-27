@@ -35,6 +35,7 @@ import EnhancePlaceAd from "./screens/EnhancePlaceAd";
 import ContactPlaceAd from "./screens/ContactPlaceAd";
 import PacakagePlaceAd from "./screens/PacakagePlaceAd";
 import Register from "./screens/Register";
+import Advertise from "./screens/Advertise";
 
 function App() {
   return (
@@ -76,9 +77,9 @@ function App() {
           <Route path="/report" element={<Receipts />} />
           <Route path="/businessprofile" element={<BusinessProfile />} />
           <Route path="/paymentmethods" element={<PaymentMethods />} />
-
           <Route path="/messages" element={<Messeges />} />
           <Route path="/Logout" element={<Logout />} />
+          <Route path="/advertise" element={<Advertise />} />
           <Route path="/manageAds" element={<ManageMyAds />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Regsiter />} />

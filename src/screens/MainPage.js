@@ -21,7 +21,7 @@ export default function MainPage() {
     <>
       <Header />
       <section className="text-gray-600 body-font">
-       <SearchBar/>
+        <SearchBar />
       </section>
       {/* nbjnbj */}
       <div class="bg-white py-6 sm:py-8 lg:py-12">
@@ -85,169 +85,6 @@ export default function MainPage() {
       </div>
       {/* bnjb */}
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/420x260"
-                />
-              </a>
-              <div className="mt-1 p-4">
-                <h2 className="text-gray-900 title-font text-lg font-bold">
-                  The Catalyzer - Your Gateway to Innovation
-                </h2>
-
-                {/* Location Icon and Text */}
-                <div className="flex items-center mt-2">
-                  <FiMapPin className="text-gray-500 mr-2" size={16} />
-                  <span className="text-sm text-gray-500">uk</span>
-                </div>
-
-                {/* Price and Heart Icon */}
-                <div className="flex items-center justify-between mt-2">
-                  <div className="flex items-center">
-                    <FiTag className="text-gray-500 mr-2" size={16} />
-                    <span className="text-sm">$16.00</span>
-                  </div>
-                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/421x261"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
-                </h2>
-                <p class="mt-1">$21.15</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/422x262"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Neptune
-                </h2>
-                <p class="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/423x263"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
-                </h2>
-                <p class="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/424x264"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  The Catalyzer
-                </h2>
-                <p class="mt-1">$16.00</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/425x265"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
-                </h2>
-                <p class="mt-1">$21.15</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/427x267"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Neptune
-                </h2>
-                <p class="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a class="block relative h-48 rounded overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src="https://dummyimage.com/428x268"
-                />
-              </a>
-              <div class="mt-4">
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
-                </h3>
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
-                </h2>
-                <p class="mt-1">$18.40</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* other */}
-      <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
@@ -281,6 +118,189 @@ export default function MainPage() {
           </div>
         </div>
       </section>
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 mx-8 font-medium text-gray-900">
+        Today's picks in UK
+      </h1>
+
+      <div class="flex p-5 space-x-6">
+        <div class="flex flex-col items-center px-4 py-2 rounded border hover:bg-black hover:text-white hover:font-bold transition duration-300">
+          <h3 class="mb-1 text-center text-lg font-semibold md:text-xl text-black">
+            Motors
+          </h3>
+        </div>
+
+        <div class="flex flex-col items-center px-4 py-2 rounded border hover:bg-black hover:text-white hover:font-bold transition duration-300">
+          <h3 class="mb-1 text-center text-lg font-semibold md:text-xl text-black">
+            Jobs
+          </h3>
+        </div>
+
+        <div class="flex flex-col items-center px-4 py-2 rounded border hover:bg-black hover:text-white hover:font-bold transition duration-300">
+          <h3 class="mb-1 text-center text-lg font-semibold md:text-xl text-black">
+            Service
+          </h3>
+        </div>
+
+        <div class="flex flex-col items-center px-4 py-2 rounded border hover:bg-black hover:text-white hover:font-bold transition duration-300">
+          <h3 class="mb-1 text-center text-lg font-semibold md:text-xl text-black">
+            Animals
+          </h3>
+        </div>
+      </div>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4 px-3">
+            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg mx-2">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-1 p-4">
+                <h2 className="text-gray-900 title-font text-lg font-bold">
+                  The Catalyzer - Your Gateway to Innovation
+                </h2>
+
+                {/* Location Icon and Text */}
+                <div className="flex items-center mt-2">
+                  <FiMapPin className="text-gray-500 mr-2" size={16} />
+                  <span className="text-sm text-gray-500">uk</span>
+                </div>
+
+                {/* Price and Heart Icon */}
+                <div className="flex items-center justify-between mt-2">
+                  <div className="flex items-center">
+                    <FiTag className="text-gray-500 mr-2" size={16} />
+                    <span className="text-sm">$16.00</span>
+                  </div>
+                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg mx-2">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-1 p-4">
+                <h2 className="text-gray-900 title-font text-lg font-bold">
+                  The Catalyzer - Your Gateway to Innovation
+                </h2>
+
+                {/* Location Icon and Text */}
+                <div className="flex items-center mt-2">
+                  <FiMapPin className="text-gray-500 mr-2" size={16} />
+                  <span className="text-sm text-gray-500">uk</span>
+                </div>
+
+                {/* Price and Heart Icon */}
+                <div className="flex items-center justify-between mt-2">
+                  <div className="flex items-center">
+                    <FiTag className="text-gray-500 mr-2" size={16} />
+                    <span className="text-sm">$16.00</span>
+                  </div>
+                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
+                </div>
+              </div>
+            </div>{" "}
+            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg mx-2">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-1 p-4">
+                <h2 className="text-gray-900 title-font text-lg font-bold">
+                  The Catalyzer - Your Gateway to Innovation
+                </h2>
+
+                {/* Location Icon and Text */}
+                <div className="flex items-center mt-2">
+                  <FiMapPin className="text-gray-500 mr-2" size={16} />
+                  <span className="text-sm text-gray-500">uk</span>
+                </div>
+
+                {/* Price and Heart Icon */}
+                <div className="flex items-center justify-between mt-2">
+                  <div className="flex items-center">
+                    <FiTag className="text-gray-500 mr-2" size={16} />
+                    <span className="text-sm">$16.00</span>
+                  </div>
+                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
+                </div>
+              </div>
+            </div>{" "}
+            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg mx-2">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-1 p-4">
+                <h2 className="text-gray-900 title-font text-lg font-bold">
+                  The Catalyzer - Your Gateway to Innovation
+                </h2>
+
+                {/* Location Icon and Text */}
+                <div className="flex items-center mt-2">
+                  <FiMapPin className="text-gray-500 mr-2" size={16} />
+                  <span className="text-sm text-gray-500">uk</span>
+                </div>
+
+                {/* Price and Heart Icon */}
+                <div className="flex items-center justify-between mt-2">
+                  <div className="flex items-center">
+                    <FiTag className="text-gray-500 mr-2" size={16} />
+                    <span className="text-sm">$16.00</span>
+                  </div>
+                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
+                </div>
+              </div>
+            </div>{" "}
+            <div className="lg:w-1/4 md:w-1/2 w-full border border-gray-300 rounded-lg mx-2">
+              <a className="block relative h-48 rounded overflow-hidden">
+                <img
+                  alt="ecommerce"
+                  className="object-cover object-center w-full h-full block"
+                  src="https://dummyimage.com/420x260"
+                />
+              </a>
+              <div className="mt-1 p-4">
+                <h2 className="text-gray-900 title-font text-lg font-bold">
+                  The Catalyzer - Your Gateway to Innovation
+                </h2>
+
+                {/* Location Icon and Text */}
+                <div className="flex items-center mt-2">
+                  <FiMapPin className="text-gray-500 mr-2" size={16} />
+                  <span className="text-sm text-gray-500">uk</span>
+                </div>
+
+                {/* Price and Heart Icon */}
+                <div className="flex items-center justify-between mt-2">
+                  <div className="flex items-center">
+                    <FiTag className="text-gray-500 mr-2" size={16} />
+                    <span className="text-sm">$16.00</span>
+                  </div>
+                  <FiHeart className="text-red-500 cursor-pointer" size={20} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* other */}
+
       {/* bjmn */}
       <section class="bg-white dark:bg-gray-900">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
