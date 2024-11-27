@@ -1,6 +1,7 @@
 
 import React from "react";
 import logo from "../assests/logo.png";
+import { FiPlus } from "react-icons/fi";
 export default function Footer() {
   return (
     <footer className="bg-gray-600 text-white">
@@ -8,6 +9,13 @@ export default function Footer() {
        
       <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className="flex md:items-center lg:items-start md:flex-row flex-wrap flex-col">
+      <a
+  href="/descriptionPlaceAd"
+  className="inline-flex items-center bg-red-500 border-0 py-3 px-8 focus:outline-none hover:bg-red-600 rounded  mb-10 text-base text-white"
+>
+  Place Your Ad 
+  <FiPlus className="w-4 h-4 ml-1" />
+</a>
       <div className="w-64 flex-shrink-0 mx-auto text-center md:text-left md:mt-0 mt-10">
         <div className="md:w-2/3 flex flex-col items-start">
           <h2 className="text-lg mb-2">Subscribe to our FREE newsletter</h2>

@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import HeaderSecond from "../components/HeaderSecond";
 import logo from "../assests/logo.png";
+import announce from "../assests/announce.png";
 export default function Blog() {
   return <> 
 
@@ -14,7 +15,7 @@ export default function Blog() {
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">Top stories</a>
-      <a href="/write-for-us" class="mr-5 hover:text-gray-900">write for us k</a>
+      <a href="/write-for-us" class="mr-5 hover:text-gray-900">write for us </a>
       <a class="mr-5 hover:text-gray-900">categories</a>
       <a class="mr-5 hover:text-gray-900">Go to firday add</a>
     </nav>
@@ -23,17 +24,27 @@ export default function Blog() {
 </header>
 {/* hader end  */}
 {/* man ssection */}
-<section class="text-white-600 body-font bg-pink-400" >
+<section class="text-white-600 body-font bg-[#FFD1DC]" >
   <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
       <h1 class="title-font sm:text-4xl text-2xl mb-4 font-medium text-white">Explore the Friday-Ad Blog Online</h1>
      
-      <div class="flex w-full md:justify-start justify-center items-end">
-        <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-          <input type="text" placeholder="Read about" id="hero-field" name="hero-field" class="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <button class="inline-flex text-white bg-green-500 border-0 py-2  focus:outline-none rounded text-lg">Search</button>
-      </div>
+      <div class="flex w-full justify-center items-center">
+  <div class="relative flex items-center w-full md:w-full lg:w-full xl:w-1/2 w-2/4">
+    <input 
+      type="text" 
+      placeholder="Read about" 
+      id="hero-field" 
+      name="hero-field" 
+      class="w-full bg-white rounded-l focus:bg-transparent focus:border-indigo-500 text-black outline-none py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
+    />
+    <button 
+      class="inline-flex items-center px-4 py-2 bg-green-500 text-white border-0 rounded-r text-lg focus:outline-none">
+      Search
+    </button>
+  </div>
+</div>
+
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 text-right">
       <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/400x400"/>
@@ -44,9 +55,10 @@ export default function Blog() {
 {/* maian section end */}
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex w-full mb-20 flex-wrap">
-      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Popular categories</h1>
-    </div>
+  <div class="flex flex-col items-center w-full mb-20">
+  <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900">Popular categories</h1>
+</div>
+
     
     <div class="flex justify-center w-full">
       <div class="flex space-x-4">
@@ -77,10 +89,10 @@ export default function Blog() {
 {/* recents posts  */}
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex w-full mb-20 flex-wrap">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 text-center lg:w-1/3 lg:mb-0 mb-4">Recent Posts</h1>
-     
-    </div>
+  <div class="flex flex-col items-center w-full mb-20">
+  <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900">Recent Posts</h1>
+</div>
+
     <div class="flex flex-wrap md:-m-2 -m-1">
   <div class="flex flex-wrap w-1/2">
     <div class="md:p-2 p-1 w-full">
@@ -116,6 +128,10 @@ export default function Blog() {
      
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+    <div class="flex flex-col items-center w-full mb-20">
+  <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900">Read more</h1>
+</div>
+
       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503"/>
@@ -156,25 +172,25 @@ export default function Blog() {
   </div>
 </section>
 {/* contact us  */}
-<section class="text-gray-600 body-font relative bg-pink-400 m-20">
+<section class="text-gray-600 body-font relative bg-[#FFD1DC] m-20">
   <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
     
     <div class=" relative flex flex-wrap py-3 rounded shadow-md">
-      <img alt="gallery" class="w-full h-auto object-cover object-center block" src="https://dummyimage.com/400x200" />
+      <img alt="gallery" class="w-full h-auto object-cover object-center block" src="https://dummyimage.com/300x300" />
     </div>
  
     <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 text-white">
       <h2 class="text-lg mb-1 text-xl text-pink-700 font-medium title-font">Have you got any news for us?</h2>
-      <p class="leading-relaxed mb-5">Send us your community news</p>
-      <div class="relative mb-4">
+      <p class="leading-relaxed mb-5 text-black">Send us your community news</p>
+      <div class="relative mb-4 text-black">
         <label for="name" class="leading-7 text-sm">Name</label>
         <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
-      <div class="relative mb-4">
+      <div class="relative mb-4 text-black">
         <label for="email" class="leading-7 text-sm">Email</label>
         <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
-      <div class="relative mb-4">
+      <div class="relative mb-4 text-black">
         <label for="message" class="leading-7 text-sm">Message</label>
         <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
       </div>
