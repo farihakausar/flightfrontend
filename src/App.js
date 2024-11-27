@@ -34,6 +34,7 @@ import DescrtopnPlaceAd from "./screens/DescrtopnPlaceAd";
 import EnhancePlaceAd from "./screens/EnhancePlaceAd";
 import ContactPlaceAd from "./screens/ContactPlaceAd";
 import PacakagePlaceAd from "./screens/PacakagePlaceAd";
+import Register from "./screens/Register";
 
 function App() {
   return (
@@ -47,43 +48,21 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/testimonials" element={<Testimonials />} />
 
-        
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
           />
-       <Route
-            path="/placeAd"
-            element={<PlaceAd />}
-          />
-           <Route
-            path="/descriptionPlaceAd"
-            element={<DescrtopnPlaceAd />}
-          />
-           <Route
-            path="/enhnacePlaceAd"
-            element={<EnhancePlaceAd />}
-          />
-           <Route
-            path="/contactPlaceAd"
-            element={<ContactPlaceAd />}
-          />
-          <Route
-            path="/pacakgePlaceAd"
-            element={<PacakagePlaceAd />}
-          />
-        <Route
-            path="/collections"
-            element={<Collections />}
-          />
-       <Route
-            path="/basic"
-            element={<Basic />}
-          />
-      
+          <Route path="/placeAd" element={<PlaceAd />} />
+          <Route path="/descriptionPlaceAd" element={<DescrtopnPlaceAd />} />
+          <Route path="/enhnacePlaceAd" element={<EnhancePlaceAd />} />
+          <Route path="/contactPlaceAd" element={<ContactPlaceAd />} />
+          <Route path="/pacakgePlaceAd" element={<PacakagePlaceAd />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/basic" element={<Basic />} />
+
           <Route path="/blogAll" element={<Blog />} />
-          <Route path="/mediaPack" element={<MediaPack/>}/>
+          <Route path="/mediaPack" element={<MediaPack />} />
           <Route path="/help" element={<Help />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/blogcat" element={<BlogCategory />} />
@@ -103,6 +82,7 @@ function App() {
           <Route path="/manageAds" element={<ManageMyAds />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Regsiter />} />
+          <Route path="/registerMain" element={<Register />} />
         </Routes>
       </div>
     </Router>
