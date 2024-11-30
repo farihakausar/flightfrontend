@@ -1,33 +1,41 @@
 import React from "react";
 import { Tabs } from "antd";
 import LeftSection from "../components/LeftSection";
-import "../css/Receipts.css"; // Assuming you'll add custom CSS here
-
+import HeaderSecond from "../components/HeaderSecond";
 const { TabPane } = Tabs;
 
 export default function Receipts() {
   return (
     <>
+      <div>
+        <HeaderSecond />
+      </div>
       <LeftSection />
       <main className="p-4 md:ml-64 h-auto pt-20">
         <div className="h-96 mb-4">
           <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-            Messages
+            Favourites
           </h2>
-
-          {/* Ant Design Tabs for Adverts and Subscriptions */}
           <Tabs
             defaultActiveKey="1"
-            tabBarStyle={{
-              textAlign: "center",
-            }}
-            className="custom-tabs"
+            className="w-full"
+            tabBarStyle={{ textAlign: "center" }}
+            style={{ display: "block" }} // Ensures the tabs and content are stacked vertically
           >
             {/* Tab 1: Adverts */}
-            <TabPane tab="Adverts" key="1">
-              <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12">
+            <TabPane
+              tab={
+                <span className="text-center font-bold text-green-500">
+                  Ads
+                  <span className="ml-1 text-xs text-gray-500">(1)</span>
+                </span>
+              }
+              key="1"
+            >
+              <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12 mb-4">
                 <div className="bg-gray-200 text-gray-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                   <i className="fas fa-info"></i>{" "}
+                  {/* Assuming you're using Font Awesome */}
                 </div>
                 <p className="text-lg text-gray-500 mb-6">
                   You have no payment methods.
@@ -38,11 +46,18 @@ export default function Receipts() {
               </div>
             </TabPane>
 
-            {/* Tab 2: Subscriptions */}
-            <TabPane tab="Subscriptions" key="2">
-              <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12">
+            {/* Tab 2: Active */}
+            <TabPane
+              tab={
+                <span className="text-center font-bold text-green-500">
+                  Business
+                </span>
+              }
+              key="2"
+            >
+              <div className="flex flex-col justify-center items-center text-center border border-gray-300 rounded-lg p-6 md:p-12 mb-4">
                 <div className="bg-gray-200 text-gray-600 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <i className="fas fa-info"></i>{" "}
+                  <i className="fas fa-info"></i>
                 </div>
                 <p className="text-lg text-gray-500 mb-6">
                   You have no active subscriptions.

@@ -33,12 +33,12 @@ export default function LeftSection() {
       </nav>
 
       <aside
-        className="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border border-gray-300 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        className="fixed top-30 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border border-gray-300 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
         aria-label="Sidenav"
         id="drawer-navigation"
       >
         {/* User Section */}
-        <div className="flex flex-col items-center p-4 border-b border-gray-200 dark:border-gray-700">
+        <div className="flex flex-col items-center p-4 border-b border-gray-200 dark:border-gray-700 mt-50">
           <img
             src="https://via.placeholder.com/80"
             alt="User"
@@ -89,7 +89,7 @@ export default function LeftSection() {
             </li>
             <li>
               <Link
-                to="/businessprofile"
+                to="/businessPage"
                 className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <span className="ml-3">Create Business Profile</span>

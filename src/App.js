@@ -36,6 +36,7 @@ import ContactPlaceAd from "./screens/ContactPlaceAd";
 import PacakagePlaceAd from "./screens/PacakagePlaceAd";
 import Register from "./screens/Register";
 import Advertise from "./screens/Advertise";
+import BusinessPage from "./screens/BusinessPage";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
 
           <Route path="/blogAll" element={<Blog />} />
           <Route path="/mediaPack" element={<MediaPack />} />
+          <Route path="/businessPage" element={<BusinessPage />} />
           <Route path="/help" element={<Help />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/blogcat" element={<BlogCategory />} />
@@ -74,7 +76,7 @@ function App() {
           <Route path="/favads" element={<FavAds />} />
           <Route path="/accounts" element={<ManageAccounts />} />
           <Route path="/savedsearches" element={<SavedSearch />} />
-          <Route path="/report" element={<Receipts />} />
+          <Route path="/receipts" element={<Receipts />} />
           <Route path="/businessprofile" element={<BusinessProfile />} />
           <Route path="/paymentmethods" element={<PaymentMethods />} />
           <Route path="/messages" element={<Messeges />} />

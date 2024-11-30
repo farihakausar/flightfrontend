@@ -1,9 +1,12 @@
 import React from "react";
 import LeftSection from "../components/LeftSection";
-
+import HeaderSecond from "../components/HeaderSecond";
 export default function Messeges() {
   return (
     <>
+      <div>
+        <HeaderSecond />
+      </div>
       <LeftSection />
       <main class="p-4 md:ml-64 h-auto pt-20">
         <div class="h-96 mb-4">

@@ -5,7 +5,9 @@ import HeaderSecond from "../components/HeaderSecond";
 export default function DashBoard() {
   return (
     <>
-   
+      <div>
+        <HeaderSecond />
+      </div>
       <LeftSection />
       <main className="p-4 md:ml-64 h-auto pt-20">
         <div className="rounded-lg h-96 mb-4">
@@ -13,7 +15,8 @@ export default function DashBoard() {
             <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
               Dashboard
             </h2>
-            <button className="bg-black text-white px-4 py-2 rounded-lg">
+            <button className="bg-blue-500  text-white px-4 py-2 rounded-lg">
+              <p>Got A question?</p>
               Got Messages
             </button>
           </div>
@@ -115,7 +118,6 @@ export default function DashBoard() {
           </div>
         </div>
       </main>
-   
     </>
   );
 }
